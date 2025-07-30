@@ -2306,7 +2306,7 @@ span {
 }
 
 .offcanvas__logo a img {
-  width: 150px;
+  width: 200px;
 }
 
 .offcanvas__wrapper {
@@ -6465,4 +6465,19 @@ span {
   color: var(--header);
   text-align: right;
   font-style: italic;
+}
+.logo img {
+  width: 11vw; /* default for desktops */
+}
+
+@media (max-width: 768px) { /* tablets & mobiles */
+  .logo img {
+    width: 40vw; /* make it bigger on small screens */
+  }
+}
+
+@media (max-width: 480px) { /* smaller mobiles */
+  .logo img {
+    width: 30vw;
+  }
 }
