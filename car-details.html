@@ -163,14 +163,14 @@
             <div class="logo">
               <a href="index.html" class="header-logo">
                 <img
-                  src="assets/img/logo/white-logo.png"
+                  src="assets/img/logo/logo.png"
                   alt="logo-img"
                   style="width: 11vw"
                 />
               </a>
               <a href="index.html" class="header-logo-2">
                 <img
-                  src="assets/img/logo/black-logo.png"
+                  src="assets/img/logo/logo.png"
                   alt="logo-img"
                   style="width: 7vw"
                 />
@@ -247,123 +247,169 @@
 
     <!-- Car Section Start -->
 
-    <section
-      id="car-details"
-      class="car-details-section fix section-padding"
-    ></section>
-
-    <!-- Car Section Start -->
-    <!-- <section class="car-section fix section-padding pt-0">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title-area">
-                        <div class="section-title">
-                            <h2 class="wow fadeInUp" data-wow-delay=".3s">Featured Cars</h2>
-                        </div>
-                        <a href="car.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">View More <i class="fa-regular fa-car"></i></a>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="car-box-items item-bg-color">
-                            <div class="car-titile">
-                                <h4><a href="car.html">Chevrolet Camaro</a></h4>
-                                
-                            </div>
-                           
-                            <div class="car-image">
-                                <img src="assets/img/car/04.png" alt="img">
-                            </div>
-                            <div class="car-list-items">
-                                <ul>
-                                    <li>
-                                        <i class="fa-regular fa-gas-pump"></i>
-                                        Diesel
-                                    </li>
-                                   
-                                    <li>
-                                        <i class="fa-light fa-users"></i>
-                                        4 People
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-light fa-gauge"></i>
-                                        1570 km
-                                    </li>
-                                </ul>
-                                <div class="price-items">
-                                    <h3>162,200 AED</h3>
-                                    <a href="car.html" class="theme-btn">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="car-box-items item-bg-color">
-                            <div class="car-titile">
-                                <h4><a href="car.html">BMW M3</a></h4>
-                              
-                            </div>
-                            
-                            <div class="car-image">
-                                <img src="assets/img/car/05.png" alt="img">
-                            </div>
-                            <div class="car-list-items">
-                                <ul>
-                                    <li>
-                                        <i class="fa-regular fa-gas-pump"></i>
-                                        Diesel
-                                    </li>
-                                  
-                                    <li>
-                                        <i class="fa-light fa-users"></i>
-                                        4 People
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-light fa-gauge"></i>
-                                        850 km
-                                    </li>
-                                </ul>
-                                <div class="price-items">
-                                    <h3>648,000 AED</h3>
-                                    <a href="car.html" class="theme-btn">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="car-box-items item-bg-color">
-                            <div class="car-titile">
-                                <h4><a href="car.html">Ferrari F8 Tributo</a></h4>
-                               
-                            </div>
-                            
-                            <div class="car-image">
-                                <img src="assets/img/car/06.png" alt="img">
-                            </div>
-                            <div class="car-list-items">
-                                <ul>
-                                    <li>
-                                        <i class="fa-regular fa-gas-pump"></i>
-                                        Diesel
-                                    </li>
-                                   
-                                    <li>
-                                        <i class="fa-light fa-users"></i>
-                                        4 People
-                                    </li>
-                                    <li>
-                                        <i class="fa-sharp fa-light fa-gauge"></i>
-                                        1670 km
-                                    </li>
-                                </ul>
-                                <div class="price-items">
-                                    <h3>699,000 AED</h3>
-                                    <a href="car.html" class="theme-btn">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="car-details-section fix section-padding">
+      <div class="container">
+        <div class="car-details-wrapper">
+          <div class="row">
+            <div class="col-lg-7">
+              <!-- Car Image Carousel -->
+              <div class="car-details-image">
+                <div class="tab-content" id="car-images">
+                  <!-- JS will inject images here -->
                 </div>
+                <ul
+                  class="nav mb-5 d-flex flex-row flex-wrap gap-2 justify-content-start"
+                  id="car-thumbs"
+                >
+                  <!-- JS will inject thumbnails here -->
+                </ul>
+              </div>
+
+              <!-- <div class="feature-box">
+                <h3 id="feature-title">Convenience</h3>
+                <p id="feature-desc">
+                 
+                </p>
+              </div> -->
             </div>
-        </section> -->
+
+            <div class="col-lg-5">
+              <div class="car-details-right-items">
+                <div class="car-details-box-items">
+                  <h2 id="car-title">Car Name</h2>
+                  <ul class="list-items" id="car-quick-info">
+                    <!-- JS will inject fuel, seats, mileage -->
+                  </ul>
+
+                  <h3>Specifications</h3>
+                  <ul class="details-list" id="car-specs">
+                    <!-- JS will inject specs -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <style>
+      #car-thumbs img {
+        width: 150px;
+
+        height: auto;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    </style> -->
+
+    <!-- load cars data + script -->
+    <script src="assets/cars.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const carId = parseInt(params.get("id"));
+      console.log("Car ID:", carId);
+
+      const car = cars.find((c) => c.id === carId);
+
+      if (car) {
+        // Set title
+        document.getElementById("car-title").innerText = car.name;
+
+        // Images
+        document.getElementById("car-images").innerHTML = car.thumb
+          .map(
+            (src, i) => `
+      <div id="thumb${i + 1}" class="tab-pane fade ${
+              i === 0 ? "show active " : ""
+            }">
+        <div class="car-thumb">
+          <img src="${src}" alt="${car.name}">
+        </div>
+      </div>
+    `
+          )
+          .join("");
+
+        // Thumbnails
+        document.getElementById("car-thumbs").innerHTML = car.thumb
+          .map(
+            (src, i) => `
+      <li class="nav-item col-2">
+        <a href="#thumb${i + 1}" data-bs-toggle="tab" class="nav-link ${
+              i === 0 ? "active ps-0" : ""
+            }">
+          <img src="${src}" alt="${car.name}" class="img-fluid rounded">
+        </a>
+      </li>
+    `
+          )
+          .join("");
+
+        // Quick info
+        document.getElementById("car-quick-info").innerHTML = `
+      <li><i class="fa-regular fa-gas-pump"></i> ${car.fuel}</li>
+      <li><i class="fa-light fa-users"></i> ${car.seats}</li>
+      <li><i class="fa-sharp fa-light fa-gauge"></i> ${car.mileage}</li>
+    `;
+
+        // Specifications
+ const specsList = document.getElementById("car-specs");
+
+if (car) {
+  const extra = car.extra || {}; // fallback if extra doesn't exist
+
+  specsList.innerHTML = `
+    <li>Price <span>${car.price || "N/A"}</span></li>
+    <li>Year <span>${car.year || "N/A"}</span></li>
+    <li>Transmission <span>${car.transmission || "N/A"}</span></li>
+    <li>Horsepower <span>${car.horsepower || "N/A"}</span></li>
+    <li>Parking Sensors <span>${car.parkingSensors || "N/A"}</span></li>
+    <li>Rear Camera <span>${car.rearCamera || "N/A"}</span></li>
+    <li>Ownership <span>${car.ownership || "N/A"}</span></li>
+    <li>Registration <span>${car.registration || "N/A"}</span></li>
+    <li>Clean Title <span>${car.cleanTitle || "N/A"}</span></li>
+    <li>Water Flood <span>${car.waterFlood || "N/A"}</span></li>
+    <li>Electrical Problem <span>${car.electricalProblem || "N/A"}</span></li>
+    <li>Minor Accident <span>${car.minorAccident || "N/A"}</span></li>
+    <li>Major Accident <span>${car.majorAccident || "N/A"}</span></li>
+  `;
+} else {
+  specsList.innerHTML = `<li>No specifications available.</li>`;
+}
+      } else {
+        document.querySelector(
+          ".car-details-wrapper"
+        ).innerHTML = `<p>Car not found.</p>`;
+      }
+    </script>
+
+    <div id="card-container-premium">
+      <div class="card-premium">
+        <div class="card-header-premium">Drivers Assistance & Safety</div>
+        <div class="card-content-premium">
+          Cruise Control, Front Airbags, Side Airbags, Anti-Lock Brakes/ABS &
+          All Wheel Steering
+        </div>
+      </div>
+      <div class="card-premium">
+        <div class="card-header-premium">Warranty</div>
+        <div class="card-content-premium">
+          <ul>
+            <li>MEGATRON 6-Month Warranty for Engine</li>
+            <li>Guaranteed Mechanic for 6 Months</li>
+            <li>Engine, Chassis, and Gear Guaranteed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-premium">
+        <div class="card-header-premium">Services Completed</div>
+        <div class="card-content-premium">Oil and Filters Changed</div>
+      </div>
+    </div>
+
+    <br />
+    <br />
 
     <!-- Fotter Section Start -->
     <section
@@ -433,7 +479,7 @@
                 <ul class="contact-list">
                   <li>Dubai-UAE</li>
                   <li>
-                    <a href="tel:+9710527094940">+(971) 0527094940</a>
+                    <a href="tel:+971501308108">+(971) 501308108</a>
                   </li>
                   <li>
                     <a href="mailto:megatronecars@gmail.com"
@@ -452,321 +498,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const carId = urlParams.get("id");
-
-      if (carId) {
-        fetch(`http://localhost:5000/api/v1/car/details/${carId}`)
-          .then((response) => response.json())
-          .then((car) => {
-            const images = car.car.images || [];
-
-            const tabContent = images
-              .map(
-                (img, index) => `
-          <div id="thumb${index + 1}" class="tab-pane fade ${
-                  index === 0 ? "show active" : ""
-                }">
-              <div class="car-thumb">
-                  <img 
-                      src="http://localhost:5000${img}"  
-                      class="w-100 rounded"
-                      style="height: 500px; object-fit: cover;" 
-                      alt="Car Image ${index + 1}">
-              </div>
-          </div>`
-              )
-              .join("");
-
-            // Thumbnail Navigation
-            const navItems = images
-              .map(
-                (img, index) => `
-          <li class="col-3 col-md-4 col-lg-3 p-2">
-            <a 
-              class="d-flex align-items-center justify-content-center thumbnail-tab ${
-                index === 0 ? "active" : ""
-              }"
-              data-bs-toggle="tab"
-              data-bs-target="#thumb${index + 1}"
-              role="tab"
-            >
-              <img 
-                class="img-fluid rounded w-100"
-                style="height: 100px; object-fit: cover;"
-                src="http://localhost:5000${img}" 
-                alt="Car Thumbnail ${index + 1}">
-            </a>
-          </li>`
-              )
-              .join("");
-
-            document.getElementById("car-details").innerHTML = `
-
-                 <div class="container">
-               <div class="car-details-wrapper">
-                   <div class="row">
-                        <div class="col-lg-7">
-                            <div class="car-details-image">
-                                <div class="tab-content">
-                                     ${tabContent}
-                                </div>
-                                <ul class="nav  d-flex justify-content-start  gap-3 my-3 h-25">
-                                      ${navItems}
-                                    </ul>
-                            </div>
-                            <div class="car-details-items">
-                                <h2>Key Features</h2>
-                                <p>
-                                   ${car.car.description}
-                                <ul class="nav" role="tablist">
-                                    <li class="nav-item">
-                                        <a href="#Interior" data-bs-toggle="tab" class="nav-link" aria-selected="false" role="tab" tabindex="-1">
-                                            Interior Features
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#Exterior" data-bs-toggle="tab" class="nav-link active" aria-selected="true" role="tab">
-                                            Exterior Features
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="Interior" class="tab-pane fade" role="tabpanel">
-                                        <div class="tab-site-item">
-                                     <ul class="icon-list"  >
-    ${car.car.interiorFeatures
-      .map(
-        (interior) => `
-        <li>
-            <i class="fa-solid fa-check"></i>
-            ${interior}
-        </li>
-    `
-      )
-      .join("")}
-</ul>
-
-                                           
-                                        </div>
-                                    </div>
-                                    <div id="Exterior" class="tab-pane fade active show" role="tabpanel">
-                                        <div class="tab-site-item">
-                                            <ul class="icon-list">
-                                                    ${car.car.exteriorFeatures
-                                                      .map(
-                                                        (exterior) => `
-        <li>
-            <i class="fa-solid fa-check"></i>
-            ${exterior}
-        </li>
-    `
-                                                      )
-                                                      .join("")}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- <div id="Body" class="tab-pane fade" role="tabpanel">
-                                        <div class="tab-site-item">
-                                            <ul class="icon-list">
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Excellent Service and Quality
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Perfect Fit and Fast Shipping
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Top-notch Accessories
-                                                </li>
-                                            </ul>
-                                            <ul class="icon-list">
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Excellent Service and Quality
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Perfect Fit and Fast Shipping
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    Top-notch Accessories
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="feature-box">
-                                <h3>Convenience</h3>
-                                <p>
-                                   ${car.car.convenience}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="car-details-right-items">
-                                <div class="car-details-box-items">
-                                    <h2>${car.car.carMake.name} ${
-              car.car.model
-            }</h2>
-                                    <ul class="list-items">
-                                        <li>
-                                            <i class="fa-regular fa-gas-pump"></i>
-                                          ${car.car.fuelType}
-                                        </li>
-                                       
-                                        <li>
-                                            <i class="fa-light fa-users"></i>
-                                             ${car.car.seating} People
-                                        </li>
-                                        <li>
-                                            <i class="fa-sharp fa-light fa-gauge"></i>
-                                            ${car.car.kmDriven}  km
-                                        </li>
-                                    </ul>
-                                    
-                                    <h3>
-                                        Specifications
-                                    </h3>
-                                    <ul class="details-list">
-                                        <li>
-                                            Mileage <span> ${
-                                              car.car.mileage
-                                            }  km/L</span>
-                                        </li>
-                                        <li>
-                                            Transmission <span>Automatic</span>
-                                        </li>
-                                        <li>
-                                            Seats <span>${
-                                              car.car.seating
-                                            }</span>
-                                        </li>
-                                       
-                                        <li>
-                                            Year <span>${car.car.year}</span>
-                                        </li>
-                                        <li>
-                                            Minor Accidents <span>${
-                                              car.car.minorAccident
-                                            } </span>
-                                        </li>
-                                        <li>
-                                            Major Accidents <span>${
-                                              car.car.majorAccident
-                                            } </span>
-                                        </li>
-                                        <li>
-                                            Horsepower <span>${
-                                              car.car.horsePower
-                                            } HP </span>
-                                        </li>
-                                        <li>
-                                            No. of Cylinders <span>${
-                                              car.car.numOfCylinders
-                                            }</span>
-                                        </li>
-                                        <li>
-                                            Steering Side<span>${
-                                              car.car.steeringSide
-                                            }</span>
-                                        </li>
-                                        <li>
-                                            Parking Sensors <span> ${
-                                              car.car.parkingSensor
-                                            }</span>
-                                        </li>
-                                        <li>
-                                            Ownership <span> ${
-                                              car.car.ownership
-                                            }</span>
-                                        </li>
-                                        <li>
-                                            Clean Title  <span>  ${
-                                              car.car.cleanTitle
-                                            }</span>
-                                        </li>
-                                        <li>
-                                             Water Flood<span>${
-                                               car.car.waterFlood
-                                             }</span>
-                                        </li>
-                                        <li>
-                                            Electrical Problem <span>${
-                                              car.car.electricalProblem
-                                            }</span>
-                                        </li>
-                                        <!-- <li>
-                                           Validity <span>Sept 2025</span>
-                                        </li> -->
-                                        <li>
-                                           Registration<span>${
-                                             car.car.registration
-                                           }</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- <div class="car-details-form">
-                                    <h3>
-                                        Contact Megatron Car
-                                    </h3>
-                                    <form action="contact.php" id="contact-form" method="POST" class="contact-form-items mt-3 mt-md-0">
-                                        <div class="row g-4">
-                                            <div class="col-lg-12">
-                                                <div class="form-clt">
-                                                    <span>Your Name*</span>
-                                                    <input type="text" name="name" id="name" placeholder="Your Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-clt">
-                                                    <span>Email Address*</span>
-                                                    <input type="text" name="email" id="email" placeholder="Your Email">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-clt">
-                                                    <span>Phone Number*</span>
-                                                    <input type="text" name="phone" id="phone" placeholder="phone">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <button type="submit" class="theme-btn">
-                                                    SUBMIT
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form> -->
- 
-                                <!-- Alert Box with Spinner and Success Message -->
-                                <!-- <div id="alert-box" style="display: none; background-color: #f39c12; color: white; padding: 10px; position: fixed; top: 10px; left: 50%; transform: translateX(-50%); border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); z-index: 1000;">
-                                    <div id="spinner" class="spinner" style="display: inline-block;"></div>
-                                    <span id="alert-message" style="padding-left: 10px;">Sending...</span>
-                                </div> -->
-
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                   </div>
-               </div>
-            </div>
-        `;
-          })
-          .catch((error) => {
-            console.error("Error fetching car details:", error);
-            document.getElementById(
-              "car-details"
-            ).innerHTML = `<p>Error loading car details. Please try again later.</p>`;
-          });
-      }
-    </script>
 
     <!--<< All JS Plugins >>-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
