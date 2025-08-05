@@ -166,6 +166,13 @@ body {
   height: 80px;
 }
 
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+
 ul {
   padding: 0;
   margin: 0;

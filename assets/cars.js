@@ -39,7 +39,7 @@ const cars = [
     id: 2,
     name: "BMW X5",
     link: "#",
-    img: "assets/img/car/T-2.png",
+    img: "assets/img/car/t-2.png",
     thumb: [
       "assets/img/bmw/bmw (4).jpg",
       "assets/img/bmw/bmw (2).jpg",
