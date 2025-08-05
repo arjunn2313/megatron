@@ -3,7 +3,7 @@ const cars = [
     id: 1,
     name: "Chevrolet Tahoe",
     link: "car-details.html",
-    img: "assets/img/car/Chevrolet.png",
+    img: "assets/img/car/t-1.png",
     thumb: [
       "assets/img/taho/tahoe-1.jpg",
       "assets/img/taho/tahoe-2.jpg",
@@ -39,7 +39,7 @@ const cars = [
     id: 2,
     name: "BMW X5",
     link: "#",
-    img: "assets/img/car/BMW1.png",
+    img: "assets/img/car/T-2.png",
     thumb: [
       "assets/img/bmw/bmw (4).jpg",
       "assets/img/bmw/bmw (2).jpg",
@@ -74,7 +74,7 @@ const cars = [
     id: 3,
     name: "Mitsubishi Attrage",
     link: "#",
-    img: "assets/img/car/mitsubishi.png",
+    img: "assets/img/car/t-3.png",
     thumb: [
       "assets/img/Attrage/attrage (4).jpg",
       "assets/img/Attrage/attrage (2).jpg",
@@ -109,7 +109,7 @@ const cars = [
     id: 4,
     name: "Toyota Camry",
     link: "#",
-    img: "assets/img/car/toyota.png",
+    img: "assets/img/car/t-4.png",
     thumb: [
       "assets/img/camry/camry (1).jpg",
       "assets/img/camry/camry (5).jpg",
@@ -144,7 +144,7 @@ const cars = [
     id: 5,
     name: "Nissan Sentra",
     link: "#",
-    img: "assets/img/car/sentra.png",
+    img: "assets/img/car/t-5.png",
     thumb: [
       "assets/img/sentra-2016/sentra 2016 (4).jpg",
       "assets/img/sentra-2016/sentra 2016 (5).jpg",
@@ -175,7 +175,7 @@ const cars = [
     id: 6,
     name: "Nissan Sentra",
     link: "#",
-    img: "assets/img/car/nissan-sentra.png",
+    img: "assets/img/car/t-6.png",
     thumb: [
       "assets/img/sentra-2019/sentra 2019 (1).jpg",
       "assets/img/sentra-2019/sentra 2019 (5).jpg",
@@ -210,7 +210,7 @@ const cars = [
     id: 7,
     name: "Ford Explorer",
     link: "#",
-    img: "assets/img/car/ford.png",
+    img: "assets/img/car/t-7.png",
     thumb: [
       "assets/img/ford/ford (1).jpg",
       "assets/img/ford/ford (2).jpg",
@@ -248,7 +248,7 @@ const cars = [
     id: 8,
     name: "Nissan Quest",
     link: "#",
-    img: "assets/img/car/nissan-quest.png",
+    img: "assets/img/car/t-8.png",
     thumb: [
       "assets/img/quest/quest (1).jpg",
       "assets/img/quest/quest (2).jpg",
@@ -285,7 +285,7 @@ const cars = [
     id: 9,
     name: "Toyota Rav4",
     link: "#",
-    img: "assets/img/car/toyota-2.png",
+    img: "assets/img/car/t-9.png",
     thumb: [
       "assets/img/rav/rav (3).jpg",
       "assets/img/rav/rav (4).jpg",
@@ -322,7 +322,7 @@ const cars = [
     id: 10,
     name: "Hyundai Elantra",
     link: "#",
-    img: "assets/img/car/hyundai-elentra.png",
+    img: "assets/img/car/t-10.png",
     thumb: [
       "assets/img/hyundai/h (1).jpg",
       "assets/img/hyundai/h (2).jpg",

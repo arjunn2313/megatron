@@ -35,7 +35,7 @@
 
         <!-- Preloader Start -->
         <div id="preloader" class="preloader">
-            <div class="animation-preloader">
+            <!-- <div class="animation-preloader">
                 <div class="spinner">                
                 </div>
                 <div class="txt-loading">
@@ -65,7 +65,16 @@
                     </span>
                 </div>
                 <p class="text-center">Loading</p>
-            </div>
+            </div> -->
+           
+                 <div class="animation-preloader">
+  <div class="spinner"></div>
+  <div class="logo-loading">
+    <img src="assets/img/logo/logo.png" style="width: 300px; height: 300px;" alt="Logo" />
+  </div>
+  <p class="text-center">Loading</p>
+</div>
+
             <div class="loader">
                 <div class="row">
                     <div class="col-3 loader-section section-left">
@@ -85,8 +94,22 @@
         </div>
 
         <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
+        <!-- <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div> -->
+
+        
+      <div class="custom-cursor">
+    <img src="assets/img/logo/logo.png" alt="Cursor" />
+  </div>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
+  </script>
 
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">

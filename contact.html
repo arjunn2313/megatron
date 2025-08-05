@@ -39,7 +39,7 @@
 
         <!-- Preloader Start -->
         <div id="preloader" class="preloader">
-            <div class="animation-preloader">
+            <!-- <div class="animation-preloader">
                 <div class="spinner">                
                 </div>
                 <div class="txt-loading">
@@ -69,7 +69,14 @@
                     </span>
                 </div>
                 <p class="text-center">Loading</p>
-            </div>
+            </div> -->
+               <div class="animation-preloader">
+  <div class="spinner"></div>
+  <div class="logo-loading">
+    <img src="assets/img/logo/logo.png" style="width: 300px; height: 300px;" alt="Logo" />
+  </div>
+  <p class="text-center">Loading</p>
+</div>
             <div class="loader">
                 <div class="row">
                     <div class="col-3 loader-section section-left">
@@ -89,8 +96,22 @@
         </div>
 
         <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
+        <!-- <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div> -->
+
+        
+      <div class="custom-cursor">
+    <img src="assets/img/logo/logo.png" alt="Cursor" />
+  </div>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
+  </script>
 
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
@@ -170,7 +191,7 @@
                     <div class="header-main">
                         <div class="logo">
                             <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/white-logo.png" alt="logo-img" style="width:11vw">
+                                <img src="assets/img/logo/logo.png" alt="logo-img" style="width:11vw">
                             </a>
                             <a href="index.html" class="header-logo-2">
                                 <img src="assets/img/logo/black-logo.png" alt="logo-img" style="width:7vw">
@@ -419,8 +440,8 @@
         <div class="map-section section-padding fix pt-0">
             <div class="container">
                 <div class="google-map wow fadeInUp" data-wow-delay=".3s">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.806660140149!2d55.3864222!3d25.344268000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b4ad1f84c95%3A0x905e1932b1c879a2!2sAfaq%20Alkhaleej%20Management%20Consultants!5e0!3m2!1sen!2sin!4v1754380780224!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
             </div>
         </div>
 

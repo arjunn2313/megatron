@@ -37,7 +37,7 @@
   <body>
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
-      <div class="animation-preloader">
+      <!-- <div class="animation-preloader">
         <div class="spinner"></div>
         <div class="txt-loading">
           <span data-text-preloader="M" class="letters-loading"> M </span>
@@ -50,7 +50,15 @@
           <span data-text-preloader="N" class="letters-loading"> N </span>
         </div>
         <p class="text-center">Loading</p>
-      </div>
+      </div> -->
+
+            <div class="animation-preloader">
+  <div class="spinner"></div>
+  <div class="logo-loading">
+    <img src="assets/img/logo/logo.png" style="width: 300px; height: 300px;" alt="Logo" />
+  </div>
+  <p class="text-center">Loading</p>
+</div>
       <div class="loader">
         <div class="row">
           <div class="col-3 loader-section section-left">
@@ -70,8 +78,22 @@
     </div>
 
     <!--<< Mouse Cursor Start >>-->
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
+    <!-- <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div> -->
+
+    
+      <div class="custom-cursor">
+    <img src="assets/img/logo/logo.png" alt="Cursor" />
+  </div>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
+  </script>
 
     <!-- Back To Top Start -->
     <button id="back-top" class="back-to-top">
@@ -445,9 +467,9 @@
               <h4><a href="${car.link}">${car.name}</a></h4>
             </div>
             <div class="car-image">
-              <img src="${car.img}" alt="${car.name}">
+              <img src="${car.img}" alt="${car.name}" class="mt-2" />
             </div>
-            <div class="car-list-items">
+            <div class="car-list-items mt-5">
               <ul>
                 <li><i class="fa-regular fa-calendar"></i> ${car.year}</li>
                 <li><i class="fa-regular fa-gas-pump"></i> ${car.fuel}</li>
