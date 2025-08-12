@@ -324,7 +324,7 @@ const cars = [
       "assets/img/hyundai/h (2).jpg",
       "assets/img/hyundai/h (3).jpg",
     ],
-    year: 2016, // corrected from 2020
+    year: 2020, // corrected from 2020
     fuel: "Petrol",
     seats: "5 People",
     mileage: "46,000 Miles",
