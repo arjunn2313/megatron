@@ -88,7 +88,7 @@ const cars = [
     year: 2023,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "38,000 Miles",
+    mileage: "38,000 Km",
     price: "26,000 AED", // corrected from 28,000 AED
     specs: "GCC Specs",
     transmission: "Automatic",
@@ -153,7 +153,7 @@ const cars = [
     year: 2016,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "1,00,000 Miles",
+    mileage: "1,00,000 Km",
     price: "18,000 AED", // corrected price
     specs: "GCC Specs",
     transmission: "Automatic",
