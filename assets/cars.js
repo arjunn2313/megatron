@@ -185,7 +185,7 @@ const cars = [
       "assets/img/sentra-2019/sentra 2019 (8).jpg",
       "assets/img/sentra-2019/sentra 2019 (9).jpg",
     ],
-    year: 2019, // corrected year
+    year: 2020, // corrected year
     fuel: "Petrol",
     seats: "5 People",
     mileage: "54,000 Miles",
