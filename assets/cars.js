@@ -20,7 +20,7 @@ const cars = [
     horsepower: "355 HP",
     fuel: "Petrol",
     seats: "7 People",
-    mileage: "1,30,000 mi",
+    mileage: "1,30,000 Miles",
     price: "72,000 AED",
     specs: "GCC Specs",
     parkingSensors: "Yes",
@@ -53,7 +53,7 @@ const cars = [
     year: 2016,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "86,000 km",
+    mileage: "86,000 Miles",
     price: "50,000 AED",
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -88,7 +88,7 @@ const cars = [
     year: 2023,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "38,000 km",
+    mileage: "38,000 Miles",
     price: "26,000 AED", // corrected from 28,000 AED
     specs: "GCC Specs",
     transmission: "Automatic",
@@ -123,7 +123,7 @@ const cars = [
     year: 2019,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "1,50,000 km",
+    mileage: "1,50,000 Miles",
     price: "47,000 AED", // corrected price
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -131,7 +131,6 @@ const cars = [
     parkingSensors: "No", // corrected as per given info
     rearCamera: "Yes",
     ownership: "First Owner", // corrected ownership
-    registration: "Dubai",
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -154,7 +153,7 @@ const cars = [
     year: 2016,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "1,00,000 km",
+    mileage: "1,00,000 Miles",
     price: "18,000 AED", // corrected price
     specs: "GCC Specs",
     transmission: "Automatic",
@@ -162,7 +161,7 @@ const cars = [
     parkingSensors: "No",
     rearCamera: "Yes", // corrected to Yes
     ownership: "First Owner", // corrected ownership
-    registration: "Sharjah",
+    registration: "Dubai", // corrected registration
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -189,7 +188,7 @@ const cars = [
     year: 2019, // corrected year
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "54,000 km",
+    mileage: "54,000 Miles",
     price: "35,000 AED",
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -197,7 +196,6 @@ const cars = [
     parkingSensors: "No", // corrected
     rearCamera: "Yes",
     ownership: "First Owner",
-    registration: "Dubai",
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -234,7 +232,6 @@ const cars = [
     parkingSensors: "Yes",
     rearCamera: "Yes",
     ownership: "Second Owner",
-    registration: "Abu Dhabi",
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -264,7 +261,7 @@ const cars = [
     year: 2013,
     fuel: "Petrol",
     seats: "7 People",
-    mileage: "1,48,000 km",
+    mileage: "1,48,000 Miles",
     price: "22,000 AED",
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -272,7 +269,6 @@ const cars = [
     parkingSensors: "Yes",
     rearCamera: "Yes",
     ownership: "Third Owner",
-    registration: "Dubai",
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -301,7 +297,7 @@ const cars = [
     year: 2019,
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "63,000 km",
+    mileage: "63,000 Miles",
     price: "67,000 AED", // corrected from 65,000
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -331,7 +327,7 @@ const cars = [
     year: 2016, // corrected from 2020
     fuel: "Petrol",
     seats: "5 People",
-    mileage: "46,000 km",
+    mileage: "46,000 Miles",
     price: "28,000 AED", // corrected from 30,000 AED
     specs: "Non GCC Specs",
     transmission: "Automatic",
@@ -339,7 +335,6 @@ const cars = [
     parkingSensors: "No", // corrected from Yes
     rearCamera: "Yes",
     ownership: "First Owner",
-    registration: "Sharjah",
     cleanTitle: "Yes",
     waterFlood: "No",
     electricalProblem: "No",
@@ -374,7 +369,6 @@ const cars = [
   parkingSensors: "Yes",
   rearCamera: "Standard",
   ownership: "First Owner",
-  registration: "Dubai",
   cleanTitle: "100%",
   waterFlood: "No",
   electricalProblem: "No details",
