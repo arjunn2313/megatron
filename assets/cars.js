@@ -225,7 +225,7 @@ const cars = [
     fuel: "Petrol",
     seats: "5 People", // corrected from 7
     mileage: "68,000 miles", // corrected mileage & unit
-    price: "55,000 AED",
+    price: "45,000 AED",
     specs: "Non GCC Specs",
     transmission: "Automatic",
     horsepower: "280 HP", // corrected from 290
