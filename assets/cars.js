@@ -361,7 +361,7 @@ const cars = [
   year: 2019,
   fuel: "Petrol",
   seats: "5 People",
-  mileage: "1,20,000 Miles",
+  mileage: "1,20,000 Km",
   price: "39,000 AED",
   specs: "GCC Specs",
   transmission: "Automatic",
