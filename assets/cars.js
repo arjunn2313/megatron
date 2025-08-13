@@ -378,4 +378,39 @@ const cars = [
   steeringSide: "LHD",
 },
 
+{
+id: 12,
+name: "Lexus IS 350",
+link: "#",
+img: "assets/img/car/t-12.png",
+thumb: [
+    "assets/img/lexus/lexus (1).jpg",
+    "assets/img/lexus/lexus (2).jpg",
+    "assets/img/lexus/lexus (3).jpg",
+    "assets/img/lexus/lexus (4).jpg",
+    "assets/img/lexus/lexus (5).jpg",
+    "assets/img/lexus/lexus (6).jpg",
+    "assets/img/lexus/lexus (7).jpg",
+    "assets/img/lexus/lexus (8).jpg",
+],
+year: 2021,
+fuel: "Petrol",
+seats: "5 People",
+mileage: "85,000 Km",
+price: "1,10,000 AED",
+specs: "GCC Specs",
+transmission: "Automatic",
+horsepower: "350 HP",
+parkingSensors: "Yes",
+rearCamera: "Standard",
+ownership: "First Owner",
+cleanTitle: "100%",
+waterFlood: "No",
+electricalProblem: "No",
+minorAccident: "Yes",
+majorAccident: "No",
+convenience: "Stylish and reliable compact sedan",
+steeringSide: "LHD"
+}
+
 ];
