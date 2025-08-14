@@ -102,19 +102,19 @@
     <!-- <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div> -->
 
-      <div class="custom-cursor">
-    <img src="assets/img/logo/k.png" alt="Cursor" />
-  </div>
+    <div class="custom-cursor">
+      <img src="assets/img/logo/k.png" alt="Cursor" />
+    </div>
 
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
+    <script>
+      const cursor = document.querySelector(".custom-cursor");
 
-document.addEventListener('mousemove', (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-  </script>
-  
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+      });
+    </script>
+
     <!-- Back To Top Start -->
     <button id="back-top" class="back-to-top">
       <i class="fa-regular fa-arrow-up"></i>
@@ -153,7 +153,9 @@ document.addEventListener('mousemove', (e) => {
                     <i class="fal fa-map-marker-alt"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="#">Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</a>
+                    <a target="_blank" href="#"
+                      >Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</a
+                    >
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -253,8 +255,11 @@ document.addEventListener('mousemove', (e) => {
                     <li class="has-dropdown">
                       <a href="car.html"> Shop </a>
                     </li>
-                    <li class="has-dropdown">
+                    <!-- <li class="has-dropdown">
                       <a href="Hot.html"> Hot Deals </a>
+                    </li> -->
+                    <li class="has-dropdown">
+                      <a href="garage.html">Garage </a>
                     </li>
                     <!-- <ul class="submenu">
                                                 <li class="has-dropdown">
@@ -322,7 +327,10 @@ document.addEventListener('mousemove', (e) => {
                   >Contact Us <i class="fa-regular fa-car"></i
                 ></a>
               </div>
-              <div class="header__hamburger d-xl-none my-auto">
+              <div
+                class="header__hamburger d-xl-none my-auto"
+                style="color: white !important;  "
+              >
                 <div class="sidebar__toggle">
                   <i class="fas fa-bars"></i>
                 </div>
@@ -770,7 +778,7 @@ document.addEventListener('mousemove', (e) => {
       <div class="container">
         <div class="video-icon">
           <a
-            href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+            href="https://www.youtube.com/shorts/agqOKnoBYko"
             class="video-text ripple video-popup"
           >
             <i class="fa-solid fa-play"></i>
@@ -939,6 +947,7 @@ document.addEventListener('mousemove', (e) => {
       <div class="container">
         <div class="footer-widgets-wrapper">
           <div class="row">
+            <!-- Utility Pages -->
             <div
               class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".2s"
@@ -948,12 +957,12 @@ document.addEventListener('mousemove', (e) => {
                   <h3>Utility Pages</h3>
                 </div>
                 <ul class="list-items">
-                  <li>
-                    <a href="contact.html"> Privacy Policy </a>
-                  </li>
+                  <li><a href="contact.html"> Privacy Policy </a></li>
                 </ul>
               </div>
             </div>
+
+            <!-- Explore -->
             <div
               class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".4s"
@@ -963,12 +972,12 @@ document.addEventListener('mousemove', (e) => {
                   <h3>Explore</h3>
                 </div>
                 <ul class="list-items">
-                  <li>
-                    <a href="service.html"> Services </a>
-                  </li>
+                  <li><a href="service.html"> Services </a></li>
                 </ul>
               </div>
             </div>
+
+            <!-- Find a Car -->
             <div
               class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".6s"
@@ -978,12 +987,12 @@ document.addEventListener('mousemove', (e) => {
                   <h3>Find a car</h3>
                 </div>
                 <ul class="list-items">
-                  <li>
-                    <a href="car.html"> Our Shop </a>
-                  </li>
+                  <li><a href="car.html"> Our Shop </a></li>
                 </ul>
               </div>
             </div>
+
+            <!-- Get In Touch -->
             <div
               class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".8s"
@@ -993,20 +1002,68 @@ document.addEventListener('mousemove', (e) => {
                   <h3>Get In Touch</h3>
                 </div>
                 <ul class="contact-list">
-                  <li>Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</li>
                   <li>
-                    <a href="tel:+9710527094940">+(971) 0527094940</a>
+                    Crystal Plaza, Corniche St, Al Majaz 1 - Sharjah - UAE
                   </li>
+                  <li><a href="tel:+9710527094940">+(971) 0527094940</a></li>
                   <li>
-                    <a href="mailto:optimusmegatroncars@gmail.com"
-                      >optimusmegatroncars@gmail.com</a
-                    >
+                    <a href="mailto:optimusmegatroncars@gmail.com">
+                      optimusmegatroncars@gmail.com
+                    </a>
                   </li>
                 </ul>
+
+                <!-- Social Icons -->
+                <div class="social-icons" style="margin-top: 15px">
+                  <a
+                    href="https://www.instagram.com/optimus_megatron_cars?utm_source=qr&igsh=MXgzaTNuaDc2dmQ4cg=="
+                    target="_blank"
+                    style="
+                      color: #e1306c;
+                      margin-right: 15px;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="http://www.youtube.com/@OptimusMegatronCarsUAE"
+                    target="_blank"
+                    style="
+                      color: #1877f2;
+                      margin-right: 15px;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="http://www.youtube.com/@OptimusMegatronCarsUAE"
+                    target="_blank"
+                    style="
+                      color: #ff0000;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+
+                <!-- Add this to your CSS for hover zoom -->
+                <style>
+                  .social-icons a:hover {
+                    transform: scale(1.2);
+                  }
+                </style>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Footer Bottom -->
         <div class="footer-bottom-wrapper">
           <p class="wow fadeInUp" data-wow-delay=".5s">
             © 2024 Megatron. All rights reserved.

@@ -184,28 +184,26 @@ document.addEventListener('mousemove', (e) => {
     <div class="offcanvas__overlay"></div>
 
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-1">
-      <div class="container"   >
+    <header id="header-sticky" class="header-1 style-inner">
+      <div class="container">
         <div class="mega-menu-wrapper">
           <div class="header-main">
-            <!-- <div class="logo" >
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/logo.png" alt="logo-img" style="width:11vw">
-                            </a>
-                            <a href="index.html" class="header-logo-2">
-                                <img src="assets/img/logo/logo.png" alt="logo-img" style="width:11vw">
-                            </a>
-                        </div> -->
-
             <div class="logo">
               <a href="index.html" class="header-logo">
-                <img src="assets/img/logo/logo.png" alt="logo-img" />
+                <img
+                  src="assets/img/logo/logo.png"
+                  alt="logo-img"
+                  style="width: 11vw"
+                />
               </a>
               <a href="index.html" class="header-logo-2">
-                <img src="assets/img/logo/logo.png" alt="logo-img" />
+                <img
+                  src="assets/img/logo/logo.png"
+                  alt="logo-img"
+                  style="width: 7vw"
+                />
               </a>
             </div>
-
             <div class="mean__menu-wrapper">
               <div class="main-menu">
                 <nav id="mobile-menu">
@@ -235,11 +233,40 @@ document.addEventListener('mousemove', (e) => {
                     <li class="has-dropdown">
                       <a href="car.html"> Shop </a>
                     </li>
-
-                    <li class="has-dropdown">
+                    <!-- <li class="has-dropdown">
                       <a href="Hot.html"> Hot Deals </a>
+                    </li> -->
+                    <li class="has-dropdown">
+                      <a href="garage.html">Garage </a>
                     </li>
-                    <!-- <li>
+                    <!-- <ul class="submenu">
+                                                <li class="has-dropdown">
+                                                    <a href="project-details.html">
+                                                        Portfolio
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="project.html">Portfolio 01</a></li>
+                                                        <li><a href="project-2.html">Portfolio 02</a></li>
+                                                        <li><a href="project-details.html">Project Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-dropdown">
+                                                    <a href="car-details.html">
+                                                        Vehicles
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="car.html">Vehicles</a></li>
+                                                        <li><a href="car-details.html">Vehicles Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="faq.html">Faq's</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                                <li><a href="login.html">Log In</a></li>
+                                                <li><a href="register.html">Register</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
                                             <a href="shop-details.html">
                                                 Shop
                                             </a>
@@ -275,10 +302,13 @@ document.addEventListener('mousemove', (e) => {
                             </div> -->
               <div class="header-button">
                 <a href="contact.html" class="theme-btn"
-                  >Contact Us <i class="fa-regular fa-car"></i
+                  >Contact Us <i class="fa-regul ar fa-ca r"></i
                 ></a>
               </div>
-              <div class="header__hamburger d-xl-none my-auto">
+              <div
+                class="header__hamburger d-xl-none my-auto"
+                style="color: white !important;  "
+              >
                 <div class="sidebar__toggle">
                   <i class="fas fa-bars"></i>
                 </div>
@@ -288,6 +318,113 @@ document.addEventListener('mousemove', (e) => {
         </div>
       </div>
     </header>
+
+
+
+
+
+
+
+
+
+    <!-- pop up -->
+
+ <!-- YouTube Shorts Popup -->
+ <!-- YouTube Shorts Popup -->
+<div id="shortsPopup" class="shorts-popup">
+  <div class="shorts-popup-content">
+    <button class="shorts-close" onclick="closeShortsPopup()">
+      <i class="fas fa-times"></i>
+    </button>
+    <iframe 
+      id="shortsVideo"
+      width="315" 
+      height="560" 
+      src="https://www.youtube.com/embed/IOZo6e50S5k?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1" 
+      title="YouTube Shorts Video" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<!-- Font Awesome CDN for Close Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* Popup Overlay */
+.shorts-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup Content */
+.shorts-popup-content {
+  position: relative;
+  background: #000;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Close Button */
+.shorts-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.shorts-close:hover {
+  background: #cc0000;
+}
+</style>
+
+<script>
+function closeShortsPopup() {
+  const popup = document.getElementById("shortsPopup");
+  const iframe = document.getElementById("shortsVideo");
+
+  // Stop video playback
+  iframe.src = iframe.src;
+
+  // Hide popup
+  popup.style.display = "none";
+}
+
+window.addEventListener("load", function () {
+  if (!sessionStorage.getItem("shortsShown")) {
+    document.getElementById("shortsPopup").style.display = "flex";
+    sessionStorage.setItem("shortsShown", "true");
+  } else {
+    document.getElementById("shortsPopup").style.display = "none";
+  }
+});
+</script>
+
+
+
 
     <!-- Hero Section Start -->
     <section
@@ -478,7 +615,7 @@ document.addEventListener('mousemove', (e) => {
     </section>
 
     <!-- Car Section Start -->
-    <section class="car-section fix section-padding section-bg">
+    <!-- <section class="car-section fix section-padding section-bg">
       <div class="container">
         <div class="section-title-area">
           <div class="section-title">
@@ -492,7 +629,7 @@ document.addEventListener('mousemove', (e) => {
             >Discover More <i class="fa-regular fa-car"></i
           ></a>
         </div>
-        <!-- <ul class="nav">
+        <ul class="nav">
                     <li class="nav-item">
                         <a href="#Popular" data-bs-toggle="tab" class="nav-link">
                             Most Popular 
@@ -523,8 +660,8 @@ document.addEventListener('mousemove', (e) => {
                             Chevrolet
                         </a>
                     </li>
-                </ul> -->
-        <!-- <div class="tab-content">
+                </ul>
+        <div class="tab-content">
                     <div id="Popular" class="tab-pane fade">
                         <div class="row">
                             <div class="col-xl-4 col-lg-6 col-md-6">
@@ -1845,9 +1982,9 @@ document.addEventListener('mousemove', (e) => {
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>  
       </div>
-    </section>
+    </section> -->
 
     <!-- Feature Section Start -->
     <section class="feature-section fix section-padding">
@@ -2226,179 +2363,165 @@ document.addEventListener('mousemove', (e) => {
         </section> -->
 
     <!-- News Section Start -->
-    <!-- <section class="news-section section-padding fix">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Latest News</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                            Check out our blog <br> posts
-                        </h2>
-                    </div>
-                    <a href="news.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">View More <i class="fa-regular fa-car"></i></a>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".3s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/01.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">What to Look for When Buying a Pre-Owned Car</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".5s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/02.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">Luxury Cars Economy Cars Which is Right for You</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".7s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/03.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <h3><a href="news-details.html">Understanding Car Financing: What You Need to Know</a></h3>
-                                <p>From luxury and economy cars and find out which best suits your lifestyle.</p>
-                                <div class="link-btn-area">
-                                    <a href="news-details.html" class="link">Read More</a>
-                                    <a href="news-details.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+
+ <section class="news-section section-padding fix">
+  <div class="container">
+    <div class="section-title-area">
+      <div class="section-title">
+        <h6 class="wow fadeInUp">Latest Shorts</h6>
+        <h2 class="wow fadeInUp" data-wow-delay=".3s">
+          Watch our latest <br> Collections
+        </h2>
+      </div>
+      <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
+        View More <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+    <div class="row">
+      <!-- Short 1 -->
+      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".3s">
+        <div class="news-box-items">
+          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
+            <iframe width="100%" height="560" 
+              src="https://www.youtube.com/embed/agqOKnoBYko" 
+              title="YouTube Shorts Video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Short 2 -->
+      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".5s">
+        <div class="news-box-items">
+          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
+            <iframe width="100%" height="560" 
+              src="https://www.youtube.com/embed/Otys08uWkuQ" 
+              title="YouTube Shorts Video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Short 3 -->
+      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".7s">
+        <div class="news-box-items">
+          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
+            <iframe width="100%" height="560" 
+              src="https://www.youtube.com/embed/yO1BdgNberc" 
+              title="YouTube Shorts Video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Fotter Section Start -->
-    <section
-      class="footer-section fix bg-cover"
-      style="background-image: url('assets/img/footer-bg.jpg')"
-    >
-      <div class="cta-sale-section">
-        <div class="container">
-          <div class="cta-sale-wrapper">
-            <div class="cta-car-image img-custom-anim-left">
-              <img src="assets/img/cta-car.png" alt="img" />
+        <section
+  class="footer-section fix bg-cover"
+  style="background-image: url('assets/img/footer-bg.jpg')"
+>
+  <div class="container">
+    <div class="footer-widgets-wrapper">
+      <div class="row">
+        <!-- Utility Pages -->
+        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+          <div class="single-footer-widget">
+            <div class="widget-head">
+              <h3>Utility Pages</h3>
             </div>
-            <div class="cta-car-content">
-              <h2 class="wow fadeInUp">Sale 50% Off</h2>
-              <!-- <p class="wow fadeInUp" data-wow-delay=".3s">On All Rental Cars For 1 Month</p> -->
-              <a
-                href="car.html"
-                class="theme-btn wow fadeInUp"
-                data-wow-delay=".5s"
-                >Book Your Car <i class="fa-regular fa-car"></i
-              ></a>
-            </div>
+            <ul class="list-items">
+              <li><a href="contact.html"> Privacy Policy </a></li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="footer-widgets-wrapper">
-          <div class="row">
-            <div
-              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".2s"
-            >
-              <div class="single-footer-widget">
-                <div class="widget-head">
-                  <h3>Utility Pages</h3>
-                </div>
-                <ul class="list-items">
-                  <li>
-                    <a href="contact.html"> Privacy Policy </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div class="single-footer-widget">
-                <div class="widget-head">
-                  <h3>Explore</h3>
-                </div>
-                <ul class="list-items">
-                  <li>
-                    <a href="service.html"> Services </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".6s"
-            >
-              <div class="single-footer-widget">
-                <div class="widget-head">
-                  <h3>Find a car</h3>
-                </div>
-                <ul class="list-items">
-                  <li>
-                    <a href="car.html"> Our Shop </a>
-                  </li>
 
-                  <li>
-                    <a href="contact.html"> Contact Us </a>
-                  </li>
-                </ul>
-              </div>
+        <!-- Explore -->
+        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+          <div class="single-footer-widget">
+            <div class="widget-head">
+              <h3>Explore</h3>
             </div>
-            <div
-              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".8s"
-            >
-              <div class="single-footer-widget">
-                <div class="widget-head">
-                  <h3>Get In Touch</h3>
-                </div>
-                <ul class="contact-list">
-                  <li>Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</li>
-                  <li>
-                    <a href="tel:+9710527094940">+(971) 0527094940</a>
-                  </li>
-                  <li>
-                    <a href="mailto:optimusmegatroncars@gmail.com"
-                      >optimusmegatroncars@gmail.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <ul class="list-items">
+              <li><a href="service.html"> Services </a></li>
+            </ul>
           </div>
         </div>
-        <div class="footer-bottom-wrapper">
-          <p class="wow fadeInUp" data-wow-delay=".5s">
-            © 2024 Megatron. All rights reserved.
-          </p>
+
+        <!-- Find a Car -->
+        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+          <div class="single-footer-widget">
+            <div class="widget-head">
+              <h3>Find a car</h3>
+            </div>
+            <ul class="list-items">
+              <li><a href="car.html"> Our Shop </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Get In Touch -->
+        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+          <div class="single-footer-widget">
+            <div class="widget-head">
+              <h3>Get In Touch</h3>
+            </div>
+            <ul class="contact-list">
+              <li>Crystal Plaza, Corniche St, Al Majaz 1 - Sharjah - UAE</li>
+              <li><a href="tel:+9710527094940">+(971) 0527094940</a></li>
+              <li>
+                <a href="mailto:optimusmegatroncars@gmail.com">
+                  optimusmegatroncars@gmail.com
+                </a>
+              </li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="social-icons" style="margin-top: 15px;">
+  <a href="https://www.instagram.com/optimus_megatron_cars?utm_source=qr&igsh=MXgzaTNuaDc2dmQ4cg==" target="_blank" style="color: #E1306C; margin-right: 15px; font-size: 24px; transition: transform 0.3s;">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" style="color: #1877F2; margin-right: 15px; font-size: 24px; transition: transform 0.3s;">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" style="color: #FF0000; font-size: 24px; transition: transform 0.3s;">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
+<!-- Add this to your CSS for hover zoom -->
+<style>
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+</style>
+
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom-wrapper">
+      <p class="wow fadeInUp" data-wow-delay=".5s">
+        © 2024 Megatron. All rights reserved.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!--<< All JS Plugins >>-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
