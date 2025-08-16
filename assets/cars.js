@@ -411,6 +411,43 @@ minorAccident: "Yes",
 majorAccident: "No",
 convenience: "Stylish and reliable compact sedan",
 steeringSide: "LHD"
+},
+{
+  id: 13,
+  name: "Nissan Sentra",
+  link: "#",
+  img: "assets/img/car/t-13.png",
+  thumb: [
+    "assets/img/nissan/nissan (1).jpg",
+    "assets/img/nissan/nissan (2).jpg",
+    "assets/img/nissan/nissan (3).jpg",
+    "assets/img/nissan/nissan (4).jpg",
+    "assets/img/nissan/nissan (5).jpg",
+    "assets/img/nissan/nissan (6).jpg",
+    "assets/img/nissan/nissan (7).jpg",
+    "assets/img/nissan/nissan (8).jpg",
+    "assets/img/nissan/nissan (9).jpg",
+ 
+  ],
+  year: 2022,
+  fuel: "Petrol",
+  seats: "5 People",
+  mileage: "23,000 Miles",
+  price: "34,000 AED",
+  specs: "GCC Specs",
+  transmission: "Automatic",
+  horsepower: "149 HP",
+  parkingSensors: "Yes",
+  rearCamera: "Standard",
+  ownership: "First Owner",
+  cleanTitle: "100%",
+  waterFlood: "No",
+  electricalProblem: "No",
+  minorAccident: "Yes",
+  majorAccident: "No",
+  convenience: "Practical and efficient compact sedan",
+  steeringSide: "LHD"
 }
+
 
 ];
