@@ -447,7 +447,45 @@ steeringSide: "LHD"
   majorAccident: "No",
   convenience: "Practical and efficient compact sedan",
   steeringSide: "LHD"
+},
+{
+  id: 14,
+  name: "Porsche Cayenne S",
+  link: "#",
+  img: "assets/img/car/t-14.png",
+  thumb: [
+    "assets/img/porsche/porsche (1).jpg",
+    "assets/img/porsche/porsche (2).jpg",
+    "assets/img/porsche/porsche (3).jpg",
+    "assets/img/porsche/porsche (11).jpg",
+    "assets/img/porsche/porsche (14).jpg",
+    "assets/img/porsche/porsche (4).jpg",
+    "assets/img/porsche/porsche (5).jpg",
+    "assets/img/porsche/porsche (6).jpg",
+    
+    "assets/img/porsche/porsche (8).jpg",
+    "assets/img/porsche/porsche (9).jpg",
+  ],
+  year: 2015,
+  fuel: "Petrol",
+  seats: "5 People",
+  mileage: "92,000 Miles",
+  price: "65,000 AED",
+  specs: "GCC Specs",
+  transmission: "Automatic",
+  horsepower: "420 HP",
+  parkingSensors: "Yes",
+  rearCamera: "Standard",
+  ownership: "First Owner",
+  cleanTitle: "100%",
+  waterFlood: "No",
+  electricalProblem: "No",
+  minorAccident: "Yes",
+  majorAccident: "No",
+  convenience: "Luxury SUV with power and comfort",
+  steeringSide: "LHD"
 }
+
 
 
 ];
