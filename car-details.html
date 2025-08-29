@@ -396,85 +396,92 @@ document.addEventListener('mousemove', (e) => {
     </style> -->
 
     <!-- load cars data + script -->
-    <script src="assets/cars.js"></script>
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      const carId = parseInt(params.get("id"));
-      console.log("Car ID:", carId);
+   <script src="assets/cars.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const carId = parseInt(params.get("id"));
+  console.log("Car ID:", carId);
 
-      const car = cars.find((c) => c.id === carId);
+  const car = cars.find((c) => c.id === carId);
 
-      if (car) {
-        // Set title
-        document.getElementById("car-title").innerText = car.name;
+  if (car) {
+    // Check car.status
+    const isSoldOut = car.status && car.status.toLowerCase() === "sold";
 
-        // Images
-        document.getElementById("car-images").innerHTML = car.thumb
-          .map(
-            (src, i) => `
-      <div id="thumb${i + 1}" class="tab-pane fade ${
-              i === 0 ? "show active " : ""
-            }">
+    // Title with Sold Out badge
+    document.getElementById("car-title").innerHTML = `
+      ${car.name} ${isSoldOut ? '<span class="sold-out-badge">SOLD OUT</span>' : ""}
+    `;
+
+    // Images
+    document.getElementById("car-images").innerHTML = car.thumb
+      .map(
+        (src, i) => `
+      <div id="thumb${i + 1}" class="tab-pane fade ${i === 0 ? "show active " : ""}">
         <div class="car-thumb">
-          <img src="${src}" alt="${car.name}"  >
+          <img src="${src}" alt="${car.name}">
         </div>
       </div>
     `
-          )
-          .join("");
+      )
+      .join("");
 
-        // Thumbnails
-        document.getElementById("car-thumbs").innerHTML = car.thumb
-          .map(
-            (src, i) => `
+    // Thumbnails
+    document.getElementById("car-thumbs").innerHTML = car.thumb
+      .map(
+        (src, i) => `
       <li class="nav-item col-2">
-        <a href="#thumb${i + 1}" data-bs-toggle="tab" class="nav-link ${
-              i === 0 ? "active ps-0" : ""
-            }">
+        <a href="#thumb${i + 1}" data-bs-toggle="tab" class="nav-link ${i === 0 ? "active ps-0" : ""}">
           <img src="${src}" alt="${car.name}" class="img-fluid rounded">
         </a>
       </li>
     `
-          )
-          .join("");
+      )
+      .join("");
 
-        // Quick info
-        document.getElementById("car-quick-info").innerHTML = `
+    // Quick info
+    document.getElementById("car-quick-info").innerHTML = `
       <li><i class="fa-regular fa-gas-pump"></i> ${car.fuel}</li>
       <li><i class="fa-light fa-users"></i> ${car.seats}</li>
       <li><i class="fa-sharp fa-light fa-gauge"></i> ${car.mileage}</li>
     `;
 
-        // Specifications
- const specsList = document.getElementById("car-specs");
+    // Specifications
+    const specsList = document.getElementById("car-specs");
+    const extra = car.extra || {}; // fallback if extra doesn't exist
 
-if (car) {
-  const extra = car.extra || {}; // fallback if extra doesn't exist
+    specsList.innerHTML = `
+      <li>Price <span>${car.price || "N/A"}</span></li>
+      <li>Year <span>${car.year || "N/A"}</span></li>
+      <li>Transmission <span>${car.transmission || "N/A"}</span></li>
+      <li>Horsepower <span>${car.horsepower || "N/A"}</span></li>
+      <li>Parking Sensors <span>${car.parkingSensors || "N/A"}</span></li>
+      <li>Rear Camera <span>${car.rearCamera || "N/A"}</span></li>
+      <li>Ownership <span>${car.ownership || "N/A"}</span></li>
+      <li>Registration <span>${car.registration || "N/A"}</span></li>
+      <li>Clean Title <span>${car.cleanTitle || "N/A"}</span></li>
+      <li>Water Flood <span>${car.waterFlood || "N/A"}</span></li>
+      <li>Electrical Problem <span>${car.electricalProblem || "N/A"}</span></li>
+      <li>Minor Accident <span>${car.minorAccident || "N/A"}</span></li>
+      <li>Major Accident <span>${car.majorAccident || "N/A"}</span></li>
+    `;
+  } else {
+    document.querySelector(".car-details-wrapper").innerHTML = `<p>Car not found.</p>`;
+  }
+</script>
 
-  specsList.innerHTML = `
-    <li>Price <span>${car.price || "N/A"}</span></li>
-    <li>Year <span>${car.year || "N/A"}</span></li>
-    <li>Transmission <span>${car.transmission || "N/A"}</span></li>
-    <li>Horsepower <span>${car.horsepower || "N/A"}</span></li>
-    <li>Parking Sensors <span>${car.parkingSensors || "N/A"}</span></li>
-    <li>Rear Camera <span>${car.rearCamera || "N/A"}</span></li>
-    <li>Ownership <span>${car.ownership || "N/A"}</span></li>
-    <li>Registration <span>${car.registration || "N/A"}</span></li>
-    <li>Clean Title <span>${car.cleanTitle || "N/A"}</span></li>
-    <li>Water Flood <span>${car.waterFlood || "N/A"}</span></li>
-    <li>Electrical Problem <span>${car.electricalProblem || "N/A"}</span></li>
-    <li>Minor Accident <span>${car.minorAccident || "N/A"}</span></li>
-    <li>Major Accident <span>${car.majorAccident || "N/A"}</span></li>
-  `;
-} else {
-  specsList.innerHTML = `<li>No specifications available.</li>`;
-}
-      } else {
-        document.querySelector(
-          ".car-details-wrapper"
-        ).innerHTML = `<p>Car not found.</p>`;
-      }
-    </script>
+<style>
+  .sold-out-badge {
+    border: red 2px solid;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+</style>
+
 
     <div id="card-container-premium">
       <div class="card-premium">

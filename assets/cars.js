@@ -109,7 +109,7 @@ const cars = [
     id: 4,
     name: "Toyota Camry",
     link: "#",
-    img: "assets/img/car/t-4.png",
+    img: "assets/img/car/t-4o.png",
     thumb: [
       "assets/img/camry/camry (1).jpg",
       "assets/img/camry/camry (5).jpg",
@@ -138,6 +138,7 @@ const cars = [
     majorAccident: "No",
     convenience: "Reliable sedan with comfortable interior",
     steeringSide: "Left", // added missing key
+    status : "sold", // added status key
   },
   {
     id: 5,
