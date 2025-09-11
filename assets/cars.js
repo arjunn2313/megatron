@@ -282,7 +282,7 @@ const cars = [
     id: 9,
     name: "Toyota Rav4",
     link: "#",
-    img: "assets/img/car/t-9.png",
+    img: "assets/img/car/s-9.png",
     thumb: [
       "assets/img/rav/rav (3).jpg",
       "assets/img/rav/rav (4).jpg",
@@ -314,6 +314,7 @@ const cars = [
     majorAccident: "No",
     convenience: "Compact SUV with sporty handling",
     steeringSide: "Left", // added
+    status : "sold",
   },
   {
     id: 10,
