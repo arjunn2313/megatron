@@ -559,6 +559,43 @@ const cars = [
   "majorAccident": "No",
   "convenience": "Full-size SUV with space and luxury",
   "steeringSide": "LHD"
+},
+{
+  "id": 17,
+  "name": "Ford Explorer",
+  "link": "#",
+  "img": "assets/img/car/t-17.png",
+  "thumb": [
+    "assets/img/fords/ford (1).jpg",
+    "assets/img/fords/ford (2).jpg",
+    "assets/img/fords/ford (3).jpg",
+    "assets/img/fords/ford (4).jpg",
+    "assets/img/fords/ford (5).jpg",
+    "assets/img/fords/ford (6).jpg",
+    "assets/img/fords/ford (7).jpg",
+    "assets/img/fords/ford (8).jpg",
+    "assets/img/fords/ford (9).jpg",
+    
+  ],
+  "year": 2018,
+  "fuel": "Petrol",
+  "seats": "5 People",
+  "mileage": "120,000 Miles",
+  "price": "40,000 AED",
+  "specs": "GCC Specs",
+  "transmission": "Automatic",
+  "horsepower": "290 HP",
+  "parkingSensors": "No",
+  "rearCamera": "Standard",
+  "ownership": "First Owner",
+  "cleanTitle": "100%",
+  "waterFlood": "No",
+  "electricalProblem": "No",
+  "minorAccident": "Yes",
+  "majorAccident": "No",
+  "convenience": "Mid-size SUV with comfort and versatility",
+  "steeringSide": "LHD"
 }
+
 
 ];
