@@ -175,7 +175,7 @@ const cars = [
     id: 6,
     name: "Nissan Sentra",
     link: "#",
-    img: "assets/img/car/t-6.png",
+    img: "assets/img/car/s-2.png",
     thumb: [
       "assets/img/sentra-2019/sentra 2019 (1).jpg",
       "assets/img/sentra-2019/sentra 2019 (5).jpg",
@@ -204,6 +204,7 @@ const cars = [
     majorAccident: "No",
     convenience: "Modern design with advanced infotainment system",
     steeringSide: "Left", // added
+    status: "sold"
   },
   {
     id: 7,
@@ -246,7 +247,7 @@ const cars = [
     id: 8,
     name: "Nissan Quest",
     link: "#",
-    img: "assets/img/car/t-8.png",
+    img: "assets/img/car/s-1.png",
     thumb: [
       "assets/img/quest/quest (1).jpg",
       "assets/img/quest/quest (2).jpg",
@@ -277,6 +278,7 @@ const cars = [
     majorAccident: "No",
     convenience: "Comfortable minivan with large cargo space",
     steeringSide: "Left", // added
+    status: "sold"
   },
   {
     id: 9,
