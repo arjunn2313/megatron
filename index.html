@@ -2,6 +2,20 @@
 <html lang="en">
   <!--<< Header Area >>-->
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MQDQZH5VGM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MQDQZH5VGM");
+    </script>
+
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,13 +67,16 @@
       </div> -->
 
       <div class="animation-preloader">
-  <div class="spinner"></div>
-  <div class="logo-loading">
-    <img src="assets/img/logo/logo.png" style="width: 300px; height: 300px;" alt="Logo" />
-  </div>
-  <p class="text-center">Loading</p>
-</div>
-
+        <div class="spinner"></div>
+        <div class="logo-loading">
+          <img
+            src="assets/img/logo/logo.png"
+            style="width: 300px; height: 300px"
+            alt="Logo"
+          />
+        </div>
+        <p class="text-center">Loading</p>
+      </div>
 
       <div class="loader">
         <div class="row">
@@ -83,18 +100,18 @@
     <!-- <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div> -->
 
-      <div class="custom-cursor">
-    <img src="assets/img/logo/k.png" alt="Cursor" />
-  </div>
+    <div class="custom-cursor">
+      <img src="assets/img/logo/k.png" alt="Cursor" />
+    </div>
 
-  <script>
-    const cursor = document.querySelector('.custom-cursor');
+    <script>
+      const cursor = document.querySelector(".custom-cursor");
 
-document.addEventListener('mousemove', (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-  </script>
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+      });
+    </script>
     <!-- Back To Top Start -->
     <button id="back-top" class="back-to-top">
       <i class="fa-regular fa-arrow-up"></i>
@@ -133,7 +150,9 @@ document.addEventListener('mousemove', (e) => {
                     <i class="fal fa-map-marker-alt"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a target="_blank" href="#">Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</a>
+                    <a target="_blank" href="#"
+                      >Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</a
+                    >
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -307,7 +326,7 @@ document.addEventListener('mousemove', (e) => {
               </div>
               <div
                 class="header__hamburger d-xl-none my-auto"
-                style="color: white !important;  "
+                style="color: white !important"
               >
                 <div class="sidebar__toggle">
                   <i class="fas fa-bars"></i>
@@ -319,90 +338,76 @@ document.addEventListener('mousemove', (e) => {
       </div>
     </header>
 
+    <style>
+      /* Popup Overlay */
+      .shorts-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
 
+      /* Popup Content */
+      .shorts-popup-content {
+        position: relative;
+        background: #000;
+        padding: 10px;
+        border-radius: 12px;
+        max-width: 90%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+      }
 
+      /* Close Button */
+      .shorts-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 36px;
+        height: 36px;
+        background: #ff0000;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
 
+      .shorts-close:hover {
+        background: #cc0000;
+      }
+    </style>
 
+    <script>
+      function closeShortsPopup() {
+        const popup = document.getElementById("shortsPopup");
+        const iframe = document.getElementById("shortsVideo");
 
+        // Stop video playback
+        iframe.src = iframe.src;
 
+        // Hide popup
+        popup.style.display = "none";
+      }
 
-
- 
- 
-
-<style>
-/* Popup Overlay */
-.shorts-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* Popup Content */
-.shorts-popup-content {
-  position: relative;
-  background: #000;
-  padding: 10px;
-  border-radius: 12px;
-  max-width: 90%;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Close Button */
-.shorts-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 36px;
-  height: 36px;
-  background: #ff0000;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.shorts-close:hover {
-  background: #cc0000;
-}
-</style>
-
-<script>
-function closeShortsPopup() {
-  const popup = document.getElementById("shortsPopup");
-  const iframe = document.getElementById("shortsVideo");
-
-  // Stop video playback
-  iframe.src = iframe.src;
-
-  // Hide popup
-  popup.style.display = "none";
-}
-
-window.addEventListener("load", function () {
-  if (!sessionStorage.getItem("shortsShown")) {
-    document.getElementById("shortsPopup").style.display = "flex";
-    sessionStorage.setItem("shortsShown", "true");
-  } else {
-    document.getElementById("shortsPopup").style.display = "none";
-  }
-});
-</script>
-
-
-
+      window.addEventListener("load", function () {
+        if (!sessionStorage.getItem("shortsShown")) {
+          document.getElementById("shortsPopup").style.display = "flex";
+          sessionStorage.setItem("shortsShown", "true");
+        } else {
+          document.getElementById("shortsPopup").style.display = "none";
+        }
+      });
+    </script>
 
     <!-- Hero Section Start -->
     <section
@@ -452,23 +457,24 @@ window.addEventListener("load", function () {
             <div class="swiper-slide">
               <div class="row g-4 align-items-center">
                 <div class="col-lg-5">
-           <div class="hero-content">
-  <h1>
-    Drive Into the Future <br />
-    With Next-Gen Cars
-  </h1>
-  <p>
-    Experience innovation, style, and unmatched performance — backed by a
-    <strong>1-Year Warranty</strong> for complete peace of mind.
-  </p>
-  <div class="hero-button">
-    <a href="car.html" class="theme-btn hover-white">
-      Shop Now
-      <i class="fa-sharp fa-regular fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-
+                  <div class="hero-content">
+                    <h1>
+                      Drive Into the Future <br />
+                      With Next-Gen Cars
+                    </h1>
+                    <p>
+                      Experience innovation, style, and unmatched performance —
+                      backed by a
+                      <strong>1-Year Warranty</strong> for complete peace of
+                      mind.
+                    </p>
+                    <div class="hero-button">
+                      <a href="car.html" class="theme-btn hover-white">
+                        Shop Now
+                        <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-7">
                   <div class="hero-image-items">
@@ -2341,164 +2347,234 @@ window.addEventListener("load", function () {
 
     <!-- News Section Start -->
 
- <section class="news-section section-padding fix">
-  <div class="container">
-    <div class="section-title-area">
-      <div class="section-title">
-        <h6 class="wow fadeInUp">Latest Shorts</h6>
-        <h2 class="wow fadeInUp" data-wow-delay=".3s">
-          Watch our latest <br> Collections
-        </h2>
-      </div>
-      <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
-        View More <i class="fab fa-youtube"></i>
-      </a>
-    </div>
+    <section class="news-section section-padding fix">
+      <div class="container">
+        <div class="section-title-area">
+          <div class="section-title">
+            <h6 class="wow fadeInUp">Latest Shorts</h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+              Watch our latest <br />
+              Collections
+            </h2>
+          </div>
+          <a
+            href="http://www.youtube.com/@OptimusMegatronCarsUAE"
+            target="_blank"
+            class="theme-btn wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            View More <i class="fab fa-youtube"></i>
+          </a>
+        </div>
 
-    <div class="row">
-      <!-- Short 1 -->
-      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".3s">
-        <div class="news-box-items">
-          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
-            <iframe width="100%" height="560" 
-              src="https://www.youtube.com/embed/agqOKnoBYko" 
-              title="YouTube Shorts Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+        <div class="row">
+          <!-- Short 1 -->
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow"
+            data-wow-delay=".3s"
+          >
+            <div class="news-box-items">
+              <div
+                class="news-image"
+                style="aspect-ratio: 9/16; overflow: hidden"
+              >
+                <iframe
+                  width="100%"
+                  height="560"
+                  src="https://www.youtube.com/embed/agqOKnoBYko"
+                  title="YouTube Shorts Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Short 2 -->
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow"
+            data-wow-delay=".5s"
+          >
+            <div class="news-box-items">
+              <div
+                class="news-image"
+                style="aspect-ratio: 9/16; overflow: hidden"
+              >
+                <iframe
+                  width="100%"
+                  height="560"
+                  src="https://www.youtube.com/embed/Otys08uWkuQ"
+                  title="YouTube Shorts Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Short 3 -->
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow"
+            data-wow-delay=".7s"
+          >
+            <div class="news-box-items">
+              <div
+                class="news-image"
+                style="aspect-ratio: 9/16; overflow: hidden"
+              >
+                <iframe
+                  width="100%"
+                  height="560"
+                  src="https://www.youtube.com/embed/yO1BdgNberc"
+                  title="YouTube Shorts Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Short 2 -->
-      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".5s">
-        <div class="news-box-items">
-          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
-            <iframe width="100%" height="560" 
-              src="https://www.youtube.com/embed/Otys08uWkuQ" 
-              title="YouTube Shorts Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Short 3 -->
-      <div class="col-xl-4 col-lg-6 col-md-6 img-custom-anim-top wow" data-wow-delay=".7s">
-        <div class="news-box-items">
-          <div class="news-image" style="aspect-ratio: 9/16; overflow:hidden;">
-            <iframe width="100%" height="560" 
-              src="https://www.youtube.com/embed/yO1BdgNberc" 
-              title="YouTube Shorts Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Fotter Section Start -->
-        <section
-  class="footer-section fix bg-cover"
-  style="background-image: url('assets/img/footer-bg.jpg')"
->
-  <div class="container">
-    <div class="footer-widgets-wrapper">
-      <div class="row">
-        <!-- Utility Pages -->
-        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-          <div class="single-footer-widget">
-            <div class="widget-head">
-              <h3>Utility Pages</h3>
+    <section
+      class="footer-section fix bg-cover"
+      style="background-image: url('assets/img/footer-bg.jpg')"
+    >
+      <div class="container">
+        <div class="footer-widgets-wrapper">
+          <div class="row">
+            <!-- Utility Pages -->
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Utility Pages</h3>
+                </div>
+                <ul class="list-items">
+                  <li><a href="contact.html"> Privacy Policy </a></li>
+                </ul>
+              </div>
             </div>
-            <ul class="list-items">
-              <li><a href="contact.html"> Privacy Policy </a></li>
-            </ul>
+
+            <!-- Explore -->
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Explore</h3>
+                </div>
+                <ul class="list-items">
+                  <li><a href="service.html"> Services </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Find a Car -->
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Find a car</h3>
+                </div>
+                <ul class="list-items">
+                  <li><a href="car.html"> Our Shop </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Get In Touch -->
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Get In Touch</h3>
+                </div>
+                <ul class="contact-list">
+                  <li>
+                    Crystal Plaza, Corniche St, Al Majaz 1 - Sharjah - UAE
+                  </li>
+                  <li><a href="tel:+9710527094940">+(971) 0527094940</a></li>
+                  <li>
+                    <a href="mailto:optimusmegatroncars@gmail.com">
+                      optimusmegatroncars@gmail.com
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Social Icons -->
+                <div class="social-icons" style="margin-top: 15px">
+                  <a
+                    href="https://www.instagram.com/optimus_megatron_cars?utm_source=qr&igsh=MXgzaTNuaDc2dmQ4cg=="
+                    target="_blank"
+                    style="
+                      color: #e1306c;
+                      margin-right: 15px;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="http://www.youtube.com/@OptimusMegatronCarsUAE"
+                    target="_blank"
+                    style="
+                      color: #1877f2;
+                      margin-right: 15px;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="http://www.youtube.com/@OptimusMegatronCarsUAE"
+                    target="_blank"
+                    style="
+                      color: #ff0000;
+                      font-size: 24px;
+                      transition: transform 0.3s;
+                    "
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+
+                <!-- Add this to your CSS for hover zoom -->
+                <style>
+                  .social-icons a:hover {
+                    transform: scale(1.2);
+                  }
+                </style>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Explore -->
-        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-          <div class="single-footer-widget">
-            <div class="widget-head">
-              <h3>Explore</h3>
-            </div>
-            <ul class="list-items">
-              <li><a href="service.html"> Services </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Find a Car -->
-        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-          <div class="single-footer-widget">
-            <div class="widget-head">
-              <h3>Find a car</h3>
-            </div>
-            <ul class="list-items">
-              <li><a href="car.html"> Our Shop </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Get In Touch -->
-        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-          <div class="single-footer-widget">
-            <div class="widget-head">
-              <h3>Get In Touch</h3>
-            </div>
-            <ul class="contact-list">
-              <li>Crystal Plaza, Corniche St, Al Majaz 1 - Sharjah - UAE</li>
-              <li><a href="tel:+9710527094940">+(971) 0527094940</a></li>
-              <li>
-                <a href="mailto:optimusmegatroncars@gmail.com">
-                  optimusmegatroncars@gmail.com
-                </a>
-              </li>
-            </ul>
-
-            <!-- Social Icons -->
-            <div class="social-icons" style="margin-top: 15px;">
-  <a href="https://www.instagram.com/optimus_megatron_cars?utm_source=qr&igsh=MXgzaTNuaDc2dmQ4cg==" target="_blank" style="color: #E1306C; margin-right: 15px; font-size: 24px; transition: transform 0.3s;">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" style="color: #1877F2; margin-right: 15px; font-size: 24px; transition: transform 0.3s;">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="http://www.youtube.com/@OptimusMegatronCarsUAE" target="_blank" style="color: #FF0000; font-size: 24px; transition: transform 0.3s;">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
-
-<!-- Add this to your CSS for hover zoom -->
-<style>
-  .social-icons a:hover {
-    transform: scale(1.2);
-  }
-</style>
-
-          </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom-wrapper">
+          <p class="wow fadeInUp" data-wow-delay=".5s">
+            © 2024 Megatron. All rights reserved.
+          </p>
         </div>
       </div>
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom-wrapper">
-      <p class="wow fadeInUp" data-wow-delay=".5s">
-        © 2024 Megatron. All rights reserved.
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!--<< All JS Plugins >>-->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
