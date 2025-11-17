@@ -71,7 +71,133 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3GM979K"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="christmas-lights"></div>
+<canvas id="snowfall"></canvas>
  
+
+ 
+
+
+ <style>
+.gift {
+  position: fixed;
+  bottom: -50px;
+  font-size: 30px;
+  animation: floatUp 6s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+</style>
+
+ <script>
+const emojis = ["❄️"];
+
+setInterval(() => {
+  if (Math.random() < 0.3) { // creates very few flakes
+    let el = document.createElement("div");
+    el.className = "gift";
+    el.innerText = emojis[0];
+    el.style.left = Math.random() * window.innerWidth + "px";
+    el.style.animationDuration = (5 + Math.random() * 3) + "s";
+
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 8000);
+  }
+}, 1200);  // slower creation rate
+</script>
+<style>
+#santa {
+  position: fixed;
+  top: 30px;
+  left: -200px;
+  font-size: 60px;
+  z-index: 9999;
+  animation: flySanta 12s linear infinite;
+}
+
+@keyframes flySanta {
+  0%   { left: -200px; transform: scale(1); }
+  50%  { top: 10px; transform: scale(1.1); }
+  100% { left: 110%; transform: scale(1); }
+}
+</style>
+
+<!-- <div id="santa">🎅🛷✨</div> -->
+
+
+
+
+ <script>
+const canvas = document.getElementById("snowfall");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let snowflakes = [];
+
+function createSnowflakes() {
+  // Reduced snow count (60 flakes)
+  for (let i = 0; i < 60; i++) {
+    snowflakes.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 3 + 1, // slightly smaller
+      d: Math.random() + 0.5     // slower snow
+    });
+  }
+}
+
+function drawSnowflakes() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  ctx.beginPath();
+
+  for (let i = 0; i < snowflakes.length; i++) {
+    let f = snowflakes[i];
+    ctx.moveTo(f.x, f.y);
+    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+  }
+
+  ctx.fill();
+  moveSnowflakes();
+}
+
+let angle = 0;
+
+function moveSnowflakes() {
+  angle += 0.01;
+
+  for (let i = 0; i < snowflakes.length; i++) {
+    let f = snowflakes[i];
+
+    f.y += Math.pow(f.d, 2) + 0.5; // slower fall
+    f.x += Math.sin(angle) * 1.5;
+
+    if (f.y > canvas.height) {
+      snowflakes[i] = {
+        x: Math.random() * canvas.width,
+        y: 0,
+        r: f.r,
+        d: f.d
+      };
+    }
+  }
+}
+
+createSnowflakes();
+setInterval(drawSnowflakes, 33);
+
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
     <!-- Preloader Start -->
     <div id="preloader" class="preloader">
       <!-- <div class="animation-preloader">
