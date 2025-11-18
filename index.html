@@ -131,10 +131,30 @@ setInterval(() => {
 
 <!-- <div id="santa">🎅🛷✨</div> -->
 
+ <div id="christmasModal" class="christmas-modal">
+  <!-- <span class="close-btn" onclick="closeModal()">×</span> -->
+  <img src="assets/img/santa.gif" alt="Santa" class="santa-gif">
+</div>
+
+<!-- <img src="assets/img/santa_sleigh.gif" class="santa-sleigh"> -->
 
 
 
- <script>
+<script>
+  function showModal() {
+  document.getElementById("christmasModal").style.bottom = "20px";
+}
+
+function closeModal() {
+  document.getElementById("christmasModal").style.bottom = "-200px";
+}
+
+// Auto-show after 3 seconds
+setTimeout(showModal, 3000);
+
+</script>
+
+ <!-- <script>
 const canvas = document.getElementById("snowfall");
 const ctx = canvas.getContext("2d");
 
@@ -199,8 +219,75 @@ window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
-</script>
+</script> -->
 
+<script>
+const canvas = document.getElementById("snowfall");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let snowflakes = [];
+
+function createSnowflakes() {
+  // Reduced snow count (30 flakes)
+  for (let i = 0; i < 30; i++) {
+    snowflakes.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2 + 1,  // smaller & softer flakes
+      d: Math.random() + 0.3     // lighter density
+    });
+  }
+}
+
+function drawSnowflakes() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  ctx.beginPath();
+
+  for (let i = 0; i < snowflakes.length; i++) {
+    let f = snowflakes[i];
+    ctx.moveTo(f.x, f.y);
+    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+  }
+
+  ctx.fill();
+  moveSnowflakes();
+}
+
+let angle = 0;
+
+function moveSnowflakes() {
+  angle += 0.01;
+
+  for (let i = 0; i < snowflakes.length; i++) {
+    let f = snowflakes[i];
+
+    f.y += Math.pow(f.d, 2) + 0.2; // slower fall speed
+    f.x += Math.sin(angle) * 0.8; // reduced wind sway
+
+    // Reset flake to top when it reaches bottom
+    if (f.y > canvas.height) {
+      snowflakes[i] = {
+        x: Math.random() * canvas.width,
+        y: 0,
+        r: f.r,
+        d: f.d
+      };
+    }
+  }
+}
+
+createSnowflakes();
+setInterval(drawSnowflakes, 40); // slower refresh = smoother
+
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
 
  
     <!-- Preloader Start -->
@@ -225,7 +312,7 @@ window.addEventListener("resize", () => {
         <div class="logo-loading">
           <img
             src="assets/img/logo/logo.png"
-            style="width: 300px; height: 300px"
+            style="width: 200px; height: 100px"
             alt="Logo"
           />
         </div>
@@ -305,7 +392,7 @@ window.addEventListener("resize", () => {
                   </div>
                   <div class="offcanvas__contact-text">
                     <a target="_blank" href="#"
-                      >Crystal Plaza,Corniche St, Al Majaz 1- Sharjah-UAE</a
+                      >Al Khail St - Al Quoz Industrial Area 3 - Dubai</a
                     >
                   </div>
                 </li>
@@ -366,14 +453,14 @@ window.addEventListener("resize", () => {
                 <img
                   src="assets/img/logo/logo.png"
                   alt="logo-img"
-                  style="width: 11vw"
+              
                 />
               </a>
               <a href="index.html" class="header-logo-2">
                 <img
                   src="assets/img/logo/logo.png"
                   alt="logo-img"
-                  style="width: 7vw"
+                 
                 />
               </a>
             </div>
